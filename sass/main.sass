@@ -1,0 +1,92 @@
+@import compass
+
+$brand-primary: #397ba8
+
+@import ../../library/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../../library/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid
+
+body
+  background: #f8f8f8
+  font:
+    family: 'Open Sans', sans-serif
+    size: 15px
+
+.big-image
+  background: rgba(51, 109, 149, 0.9)
+  color: #fff
+  text-align: center
+  padding-top: 5em
+  position: relative
+  .bg-mg
+    background: url(../images/bg.jpg)
+      size: cover
+      position: center
+      attachment: fixed
+    bottom: 0
+    position: absolute
+    z-index: -1
+    top: 0
+    width: 100%
+  h1
+    font:
+      family: 'Roboto', sans-serif
+      size: 4em
+      weight: 100
+    margin: 0
+    padding: 1.5em 0 3em
+
+.main-content
+  padding: 3em 0 0em
+  min-height: 400px
+  > h1
+    text-align: center
+    color: #333
+    font:
+      size: 1.5em
+      weight: 100
+  .btn-download-container
+    text-align: center
+    margin: 3em 0
+.btn-download
+  text-transform: uppercase
+  letter-spacing: 2px
+  font-size: 1.2em
+  padding: 0.5em 2em
+  border-radius: 0
+
+.app-icon
+  margin: 1em 0 0
+  font-size: 2em
+  i
+    margin: 0 10px
+    color: #A8A8A8
+    &.fa-android
+      color: #333
+.feature
+  h1
+    font-weight: 100
+    text-align: center
+    margin-bottom: 2.5em
+    font-size: 4em
+    margin-top: 0
+  .col-md-4
+    text-align: center
+    h2
+      font-size: 1.4em
+      margin: 1.5em 0
+
+.changes, .open-source
+  margin: 5em 0 0
+  h1
+    font-weight: 100
+.changes-content
+  > ul
+    margin: 0
+    padding: 0
+    > li
+      list-style: none
+.site-footer
+  margin: 5em 0 3em
+  text-align: center
+  img
+    width: 60px
